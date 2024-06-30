@@ -1,0 +1,7 @@
+/target
+temp_test.csv
+
+# Ignore the target directory inside docs
+/docs/debug
+
+**/.DS_Store

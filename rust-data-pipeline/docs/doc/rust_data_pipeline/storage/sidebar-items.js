@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["create_connection_pool","get_first_5_rows","store_data"]};

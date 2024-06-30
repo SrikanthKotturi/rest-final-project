@@ -1,0 +1,24 @@
+[package]
+name = "rust-data-pipeline"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+bigdecimal = "0.4.5"
+chrono = "0.4.38"
+dotenv = "0.15.0"
+futures = "0.3.30"
+polars = { git = "https://github.com/pola-rs/polars", features = ["lazy", "dtype-date", "strings", "csv"] }
+prettytable = "0.10.0"
+regex = "1.10.5"
+rust_decimal = "1.35.0"
+rust_decimal_macros = "1.34.2"
+sqlx = { version = "0.7.4", features = ["postgres", "runtime-tokio-native-tls", "time", "bigdecimal", "chrono"] }
+tokio = { version = "1.38.0", features = ["full"] }
+
+[dev-dependencies]
+tokio-test = "0.4.4"
+
+[features]
+default = ["polars/default"]
