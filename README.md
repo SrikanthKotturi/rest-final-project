@@ -72,7 +72,6 @@ cargo doc --no-deps --document-private-items --open --target-dir ./docs
 - `src/transformation.rs`: Implements data cleaning, normalization, and
   validation
 - `src/storage.rs`: Manages data storage in PostgreSQL
-- `tests/`: Contains unit tests
 - `data/`: Directory for input CSV files
 
 ## Testing
